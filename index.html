@@ -1,16 +1,11 @@
-<html>
-  <head>
-    <title>CHAT TOOL</title>
-  </head>
-  <body>
-    {% for todo in todos %}
-    <li>
-      {{ todo }}
-    </li>
-    {% endfor %}
-    <form>
-      <input type="text" name="task" placeholder="enter the message">
-      <input type="submit" >
-    </form>
-  </body>
-</html>
+{% extends "layout.html" %}
+
+{% block body %}
+<li>item 1</li>
+{% for todo in todos %}
+<li>
+    {{ todo }}
+</li>
+{% endfor %}
+<a href="/add">click here</a>
+{% endblock %}
