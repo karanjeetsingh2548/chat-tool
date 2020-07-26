@@ -9,7 +9,7 @@ todo=[]
 @app.route("/",methods=["GET","POST"])
 def index():
     if request.method == "GET":
-        return render_template("add1.html")
+        return render_template("index.html")
     else:
         todo = request.form.get("task")
         todos.append(todo)
